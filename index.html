@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18,18,62);
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+        }
+        nav ul li a:hover{
+           font-size: 1.01rem;
+            color:rgb(153,153,226);
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+        .firstSection>div{
+            width: 30%;
+        }
+        .leftSection{
+            font-size: 3rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color:white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .rightSection img{
+            width: 80%;
+        }
+        .purple{
+            color: rgb(107,107,228);
+
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element {
+            color: rgb(107,107,228);
+        }
+        .secondSection{
+            max-width: 80vh;
+            height:80vh;
+            margin-left: 10%;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .secondSection .box{
+            background: white;
+            width:77vw;
+            height:2px;
+            margin:56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+            position:relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+        .vertical-desc{
+            position:relative;
+            top:86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+        footer{
+            background-color: #0e0e1a;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color:gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Srujan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>                    
+                </ul>
+            </div>
+        </nav>
+       
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Srujan</span> 
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" id="downloadButton">Download resume</button>
+                    <button class="btn" id="redirectButton">Visit Github</button>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="dev.png" alt=""/>
+            </div>
+        </section>
+        <hr />
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="java.png" alt=""/>
+            </div>
+            <div class="vertical-title">Full Stack Java Developer(Automationedge)</div><span class="text-gray">(2022 - 2023)</span>
+            <div class="vertical-desc">
+                Worked on the frameworks like SpringBoot and Angular 13.<br>
+                Did API integrations and Responsive designs in Angular.<br>
+                Worked on facade libraries and logging enhancements like log4j2,slf4j for tracking user operations<br>
+                Generating a unique id to track operations performed by the user in app.
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="developer.png" alt=""/>
+            </div>
+            <div class="vertical-title">Machine Learing Intern(smartknower)</div> <span class="text-gray">(2022 - 2021)</span>
+            <div class="vertical-desc">
+                Worked on data preprocessing and worked on several machine learning algorithms like knn, logistic regression, svm etc.
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+          
+            <div class="footer-second"><ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul></div>
+            <div class="footer-first"><ul>
+                <li>Leetcode</li>
+                <li>GeeksForGeeks</li>
+                <li>Hackerrank</li>
+                <li>Codeforces</li>
+            </ul></div>
+            <div class="footer-third"><ul>
+                <li>Linkedin</li>
+                <li>Naukri</li>
+                <li>Indeed</li>
+                <li>Momster</li>
+            </ul></div>
+            <div class="footer-fourth"><ul>
+                <li>Instagram</li>
+                <li>Youtube</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+            </ul></div>
+        </div>
+        <div class="footer-rights">
+           &#169 www.srujanmelam.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element',{
+            strings: ['Java Developer','Full Stack Developer','MERN Stack Developer'],
+            typeSpeed: 50,
+        });
+        var redirectButton = document.getElementById("redirectButton");
+
+// Add a click event listener to the button
+redirectButton.addEventListener("click", function() {
+    // Redirect to the desired URL
+    window.location.href = "https://github.com/srujanmelam"; // Replace with your desired URL
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const downloadButton = document.getElementById('downloadButton');
+
+    // Replace 'your-local-pdf.pdf' with the path to your local PDF file
+    const pdfFile = 'melam_srujan_resume_final.pdf';
+
+    downloadButton.addEventListener('click', function () {
+        // Create an invisible anchor element
+        const downloadLink = document.createElement('a');
+        downloadLink.style.display = 'none';
+
+        // Set the href attribute to the local PDF file path
+        downloadLink.href = pdfFile;
+
+        // Set the download attribute to specify the filename for the download
+        downloadLink.download = 'downloaded-pdf.pdf';
+
+        // Append the anchor element to the document
+        document.body.appendChild(downloadLink);
+
+        // Trigger a click event on the anchor element to start the download
+        downloadLink.click();
+
+        // Clean up: remove the anchor element
+        document.body.removeChild(downloadLink);
+    });
+});
+
+    </script>
+    
+</body>
+</html>
