@@ -219,3 +219,26 @@ a{
   color: white;
   font-weight: bold;
 }
+
+.wrapper {
+  
+  display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+}
+
+.image--cover {
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  
+}
+.data{
+  margin-left: 5%;
+  height: 100%;
+  width: 100vh;
+
+}
